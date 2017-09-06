@@ -1,9 +1,17 @@
-<!doc html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Primeiro teste</title>
-</head>
-<body>
-<h1>Hello World!?!</h1>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Primeiro teste</title>
+	</head>
+	<body>
+		<h1>Hello World!?!</h1>
+		<script>
+			require('electron').ipcRenderer.on('ping', (event, message) => {
+				setTimeout(function(){
+					console.log(event + ' : ' +message)
+				}, 5000);
+			})
+		</script>
+	</body>
 </html>

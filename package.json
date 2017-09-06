@@ -1,10 +1,10 @@
 {
-  "name": "proton",
+  "name": "Proton",
   "version": "1.0.0",
   "description": "Projeto para aprendizado do desenvolvimento com a ferramenta electron.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-	  "start": "electron index.js"
+	  "start": "electron main.js"
   },
   "keywords": [],
   "author": "Hercolys Moraes <hercolysmoraes@live.com>",
